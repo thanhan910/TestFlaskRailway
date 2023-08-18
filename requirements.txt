@@ -9,7 +9,5 @@ python-dotenv
 nltk
 spacy
 transformers
-scipy
-json
-numpy
 torch
+scipy
