@@ -1,14 +1,14 @@
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-# Download the required data (run this only once)
-nltk.download('vader_lexicon')
-
-# Create a SentimentIntensityAnalyzer object
-analyzer = SentimentIntensityAnalyzer()
-
 
 def check_sentiment(text):
+    # Download the required data (run this only once)
+    nltk.download('vader_lexicon')
+
+    # Create a SentimentIntensityAnalyzer object
+    analyzer = SentimentIntensityAnalyzer()
+
     # Analyze the sentiment of text
     scores = analyzer.polarity_scores(text)
     print(scores)
